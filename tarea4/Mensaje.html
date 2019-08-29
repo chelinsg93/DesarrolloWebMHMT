@@ -1,0 +1,39 @@
+<html >
+<head>
+    <meta charset="utf-8" />
+    <title>MANDAME UN MENSAJE</title>
+    <link rel="stylesheet" type="text/css" href="maquetaT4.css">
+</head>
+<body>
+<div id="contenedor">
+  <div id="arriba">
+    <ul class="menu">
+      <li><a href="Index.html">Yo</a></li>
+      <li><a href="Amigos.html">Amigos</a></li>
+      <li><a href="Ciudad.html">Ciudad</a></li>
+      <li><a href="Hobies.html">Pasatiempos</a></li>
+      <li><a href="Miprogramacion.html">Mi Programacion</a></li>
+      <li><a href="Mensaje.html">Escribeme</a></li>
+    </ul>
+    <H1>Mandame un mensaje</H1> 
+  </div>
+  <div id="cuerpo">
+        <div>Correo:</div>
+        <FORM ACTION=../tema3/“recibir.php&quot; METHOD="GET" enctype="multipart/form-data"> 
+          <br/>
+          <INPUT TYPE="text" NAME="nombre"> Introducir Correo<br/>
+            <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea> Escribir Mensaje<br/>
+            <select name="select" id="select"> Seleccion
+                <option value="1">Femenino</option>
+                <option value="2" selected="selected">Masculino</option>
+            </select>
+          Sexo<br/>
+            <INPUT TYPE="submit" VALUE="Enviar">
+        </FORM> 
+        <ol>
+          <li><a href="Index.html" target="_blank">Atras</a> </li>
+        </ol>
+  </div>
+</div>
+</body>
+</html>
