@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 3</title>
+</head> 
+<body>
+            <form>
+                <label for="txtImput">NumCel:</label><br>
+                <input type="text" name="txtImput" id="imput"><br><br>
+            </form>
+        </div>
+<div>
+            <table>
+                <tr>
+                    <td><input onclick="teclado(this.value)" type="button" value="1"></td>
+                    <td><input onclick="teclado(this.value)" type="button" value="2"></td>
+                    <td><input onclick="teclado(this.value)" type="button" value="3"></td>
+                </tr>
+                <tr>
+                    <td><input onclick="teclado(this.value)" type="button" value="4"></td>
+                    <td><input onclick="teclado(this.value)" type="button" value="5"></td>
+                    <td><input onclick="teclado(this.value)" type="button" value="6"></td>
+                </tr>
+                <tr>
+                    <td><input onclick="teclado(this.value)" type="button" value="7"></td>
+                    <td><input onclick="teclado(this.value)" type="button" value="8"></td>
+                    <td><input onclick="teclado(this.value)" type="button" value="9"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input onclick="teclado(this.value)" type="button" value="0"></td>
+                </tr>
+            </table>
+        </div>
+   
+<script>
+    function teclado(x){
+        var imput =document.getElementById("imput");
+        imput.value+=x;
+    }
+</script>
+</body>
+</html>

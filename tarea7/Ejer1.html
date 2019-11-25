@@ -1,0 +1,32 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 1</title>
+	<script>
+		function PintarR(){
+			var espacio = document.getElementById("campo").innerHTML = document.write("ROJO");
+			document.getElementById("campo").style.color="red"
+		}
+		function PintarA(){
+			var espacio = document.getElementById("campo").innerHTML = document.write("AMARILLO");
+			document.getElementById("campo").style.color="yellow"
+		}
+		function PintarV(){
+			var espacio = document.getElementById("campo").innerHTML = document.write("VERDE");
+			document.getElementById("campo").style.color="green"
+		}
+
+	</script>
+</head>
+<body>
+		<input type="button" value="Rojo" id="ROJO" onclick="PintarR()"><br><br>
+		<input type="button" value="Amarillo" id="AMARILLO" onclick="PintarA()"><br><br>
+		<input type="button" value="Verde" id="VERDE" onclick="PintarV()"><br><br>
+
+		<input type="radio" value="Fondo" name="pintar">Fondo
+		<input type="radio" value="Primer Plano" name="pintar">Primero Plano
+	<div id="campo"></div>
+</body>
+</html>
